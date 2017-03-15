@@ -1,6 +1,7 @@
 import Foundation
 import CommandLineKit
-import Rainbow 
+import Rainbow
+import LearnSwiftKit
 
 let cli = CommandLineKit.CommandLine()
 
