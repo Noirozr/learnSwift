@@ -4,6 +4,8 @@ import Rainbow
 
 let cli = CommandLineKit.CommandLine()
 
+let excludePahtsOption = MultiStringOption(shortFlag: "e", longFlag: "exclude",
+                                     helpMessage: "Excluded paths which should not search in.")
 let projectOption = StringOption(shortFlag: "p", longFlag: "project",
                                helpMessage: "Path to the project.")
 let resourceExtensionOption = MultiStringOption(shortFlag: "r", longFlag: "resource-extensions",
@@ -43,4 +45,27 @@ if help.value {
     exit(EX_OK)
 }
 
-print("Called!".red)
+let project = projectOption.value ?? "."
+let resourceExtensions = resourceExtensionOption.value ?? ["jpg", "png", "iamgeset"]
+let fileExtensions = fileExtensionsOption.value ?? ["swfit", "m", "mm", "xib", "storyboard"]
+let excludePaths = excludePahtsOption.value ?? []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
