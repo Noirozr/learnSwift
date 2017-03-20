@@ -35,7 +35,7 @@ extension RegexStringsSearcher {
             }
         }
         
-        return result
+        return result 
     }
 }
 
